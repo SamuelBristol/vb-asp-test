@@ -5,29 +5,24 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" Runat="Server">
     <h2>Login</h2>
-
-    <div class="row">
-        <div class="input-field col s6">
-            <input id="email" type="email" class="validate" />
-            <label for="email">Email</label>
-        </div>
-        <div class="input-field col s6">
-            <input id="password" type="password" class="validate" />
-            <label for="password">Password</label>
-        </div>
-    </div>
     
     <div class="row">
         <div class="input-field col s12">
-            <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
-            <label for="textarea1">Textarea</label>
+            <asp:TextBox ID="txtEmail" runat="server" CssClass="validate" type="email"></asp:TextBox>
+            <asp:Label ID="lblEmail" runat="server" Text="Email" AssociatedControlID="txtEmail"></asp:Label>
         </div>
     </div>
 
     <div class="row">
-        <button class="btn-large waves-effect waves-light col s12" type="submit" name="action">
-            Login
-        </button>
+        <div class="input-field col s12">
+            <asp:TextBox ID="txtPassword" runat="server" CssClass="validate" type="password"></asp:TextBox>
+            <asp:Label ID="lblPassword" runat="server" Text="Password" AssociatedControlID="txtPassword"></asp:Label>
+        </div>
+    </div>
+
+    <div class="row">
+        <button ID="btnLogin" runat="server" type="submit" class="btn-large waves-effect waves-light col s12">Login</button>
+        <asp:Label ID="lblLogin" runat="server" Text="Login" AssociatedControlID="btnLogin" Visible="false"></asp:Label>
     </div>
 </asp:Content>
 

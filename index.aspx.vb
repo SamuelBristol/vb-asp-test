@@ -7,8 +7,8 @@ Partial Class _Default
     Private connStr As String = ConfigurationManager.ConnectionStrings("testConnStr").ConnectionString
 
     Private Sub _Default_Load(sender As Object, e As EventArgs) Handles Me.Load
-        rprDepartments.DataSource = getDepartments()
-        rprDepartments.DataBind()
+        'rprDepartments.DataSource = getDepartments()
+        'rprDepartments.DataBind()
     End Sub
 
     Private Function getDepartments() As DataTable
@@ -46,17 +46,17 @@ Partial Class _Default
         Return table
     End Function
 
-    Private Sub rprDepartments_ItemDataBound(sender As Object, e As RepeaterItemEventArgs) Handles rprDepartments.ItemDataBound
-        Dim type As ListItemType = e.Item.ItemType
+    'Private Sub rprDepartments_ItemDataBound(sender As Object, e As RepeaterItemEventArgs) Handles rprDepartments.ItemDataBound
+    '    Dim type As ListItemType = e.Item.ItemType
 
-        If type = ListItemType.AlternatingItem Or type = ListItemType.Item Then
-            Dim hiddenField As HiddenField = e.Item.FindControl("hdnDepartmentId")
-            Dim departmentId As Integer = hiddenField.Value
+    '    If type = ListItemType.AlternatingItem Or type = ListItemType.Item Then
+    '        Dim hiddenField As HiddenField = e.Item.FindControl("hdnDepartmentId")
+    '        Dim departmentId As Integer = hiddenField.Value
 
-            Dim rprServices As Repeater = CType(e.Item.FindControl("rprServices"), Repeater)
-            rprServices.DataSource = getServicesByDepartment(departmentId)
-            rprServices.DataBind()
-        End If
+    '        Dim rprServices As Repeater = CType(e.Item.FindControl("rprServices"), Repeater)
+    '        rprServices.DataSource = getServicesByDepartment(departmentId)
+    '        rprServices.DataBind()
+    '    End If
 
-    End Sub
+    'End Sub
 End Class
