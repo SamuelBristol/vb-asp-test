@@ -7,12 +7,29 @@
     <title>My Sweet VB Website
         <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
     </title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" />
 </head>
 <body>
     <form id="frmMain" runat="server">
-    <div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="index.aspx">Home</a></li>
+                <li><a href="about.aspx">About</a></li>
+                <li><a href="login.aspx">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+    
         <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder>
     </div>
     </form>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </body>
 </html>
