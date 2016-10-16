@@ -75,7 +75,6 @@
             </div>
         </div>
     </div>
-
     <div class="preloader-wrapper big active">
         <div class="spinner-layer spinner-blue">
             <div class="circle-clipper left">
@@ -136,13 +135,6 @@
         <a href="#!" class="collection-item">Alan</a>
         <a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
     </div>
-
-    <ul id="dropdown2" class="dropdown-content">
-        <li><a href="#!">one<span class="badge">1</span></a></li>
-        <li><a href="#!">two<span class="new badge">1</span></a></li>
-        <li><a href="#!">three</a></li>
-    </ul>
-    <a class="btn dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a>
 
     <nav>
         <div class="nav-wrapper">
