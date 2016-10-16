@@ -176,7 +176,7 @@
         <div class="col s12 m7">
             <div class="card">
                 <div class="card-image">
-                    <img src="images/sample-1.jpg">
+                    <img src="http://lorempixel.com/250/250/nature/1">
                     <span class="card-title">Card Title</span>
                 </div>
                 <div class="card-content">
@@ -196,7 +196,7 @@
         <h2 class="header">Horizontal Card</h2>
         <div class="card horizontal">
             <div class="card-image">
-                <img src="http://lorempixel.com/100/190/nature/6">
+                <img src="http://lorempixel.com/100/190/nature/3">
             </div>
             <div class="card-stacked">
                 <div class="card-content">
@@ -211,7 +211,7 @@
 
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/office.jpg">
+            <img class="activator" src="http://lorempixel.com/300/300/nature/4">
         </div>
         <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
