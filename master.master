@@ -27,9 +27,9 @@
             <% If Session.Item("loggedIn") Then %>
                 <li class="right">
                     <ul id="dpdSettings" class="dropdown-content" style="min-width: 200px">
-                        <li class="right"><a href="dashboard.aspx"><i class="material-icons left">perm_identity</i>Dashboard</a></li>
+                        <li><a href="dashboard.aspx"><i class="material-icons left">perm_identity</i>Dashboard</a></li>
                         <li class="divider"></li>
-                        <li class="right"><a href="logout.aspx"><i class="material-icons left">power_settings_new</i>Logout</a></li>
+                        <li><a href="logout.aspx"><i class="material-icons left">power_settings_new</i>Logout</a></li>
                     </ul>
                     <a class="dropdown-button" href="#!" data-activates="dpdSettings" data-beloworigin="true"><i class="material-icons">settings</i></a>
                 </li>
